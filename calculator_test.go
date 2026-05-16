@@ -106,7 +106,6 @@ func TestAgeAt(t *testing.T) {
 			want:    24,
 			wantErr: false,
 		},
-		// asOf раньше даты рождения
 		{
 			name: "asOf раньше date - ошибка",
 			args: args{
