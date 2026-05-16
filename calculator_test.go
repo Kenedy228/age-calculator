@@ -113,7 +113,7 @@ func TestAgeAt(t *testing.T) {
 				date: time.Date(2025, 1, 10, 0, 0, 0, 0, time.UTC),
 				asOf: time.Date(2024, 1, 10, 0, 0, 0, 0, time.UTC),
 			},
-			want:    -1,
+			want:    0,
 			wantErr: true,
 		},
 	}

@@ -10,7 +10,7 @@ func AgeAt(date, asOf time.Time) (int, error) {
 	asOf = normalizeCalendarDate(asOf)
 
 	if date.After(asOf) {
-		return -1, fmt.Errorf("")
+		return 0, fmt.Errorf("%w", ErrDateAfterAsOf)
 	}
 
 	rawAge := asOf.Year() - date.Year()
